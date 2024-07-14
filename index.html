@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header class="header bg-primary">
+        <div class="left-title">Zodiac's Music Player</div>
+        <style>
+            .left-title {
+                white-space: nowrap;
+            }
+            </style>
+        <div class="clearfix"></div>
+        </header>
+    <div class="player">
+        <div class="player__header">
+            <div class="player__img player__img--absolute slider">
+                <button class="player__button player__button--absolute--nw playlist">
+                    <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+                </button>
+                <button class="player__button player__button--absolute--center play">
+                    <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
+                    <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+                </button>
+                <div class="slider__content">
+                    <img class="img slider__img" src="./image/Apo.jpg" alt="cover">
+                    <img class="img slider__img" src="./image/Charkha.jpeg" alt="cover">
+                    <img class="img slider__img" src="./image/Chemtrails.png" alt="cover">
+                    <img class="img slider__img" src="./image/Elvis.jpeg" alt="cover">
+                    <img class="img slider__img" src="./image/Husn.jpeg" alt="cover">
+                    <img class="img slider__img" src="./image/Perfect.jpeg" alt="cover">
+                    <img class="img slider__img" src="./image/Say.avif" alt="cover">
+                </div>
+            </div>
+            <div class="player__controls">
+                <button class="player__button back">
+                    <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+                </button>
+                <p class="player__context slider__context">
+                    <strong class="slider__name"></strong>
+                    <span class="player__title slider__title"></span>
+                </p>
+                <button class="player__button next">
+                    <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+                </button>
+                <div class="progres">
+                    <div class="progres__filled"></div>
+                </div>
+            </div>
+        </div>
+        <ul class="player__playlist list">
+            <li class="player__song">
+                <img class="player__img img" src="./image/Apo.jpg" alt="cover">
+                <p class="player__context">
+                    <b class="player__song-name">Apocalypse</b>
+                    <span class="flex">
+                        <span class="player__title">Cigarettes After Sex</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="./music/Apo.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="./image/Charkha.jpeg" alt="cover">
+                <p class="player__context">
+                    <b class="player__song-name">Charkha</b>
+                    <span class="flex">
+                        <span class="player__title">Mukhtar Jalota</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="./music/Charkha.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="./image/Chemtrails.png" alt="cover">
+                <p class="player__context">
+                    <b class="player__song-name">Chemtrails Over the Country Club</b>
+                    <span class="flex">
+                        <span class="player__title">Lana Del Ray</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="./music/Chemtrails.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="./image/Elvis.jpeg" alt="cover">
+                <p class="player__context">
+                    <b class="player__song-name">Can't Help Falling in Love</b>
+                    <span class="flex">
+                        <span class="player__title">Elvis Presley</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="./music/Elvis.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="./image/Husn.jpeg" alt="cover">
+                <p class="player__context ">
+                    <b class="player__song-name">Husn</b>
+                    <span class="flex">
+                        <span class="player__title">Anuv Jain</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="./music/Husn.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="./image/Perfect.jpeg" alt="cover">
+                <p class="player__context">
+                    <b class="player__song-name">Perfect</b>
+                    <span class="flex">
+                        <span class="player__title">Ed Sheeran</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="./music/Perfect.mp3"></audio>
+            </li>
+            <li class="player__song">
+                <img class="player__img img" src="./image/Say.avif" alt="cover">
+                <p class="player__context ">
+                    <b class="player__song-name">Say Yes To Heaven </b>
+                    <span class="flex">
+                        <span class="player__title">Lana Del Ray</span>
+                        <span class="player__song-time"></span>
+                    </span>
+                </p>
+                <audio class="audio" src="./music/Say.mp3"></audio>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
